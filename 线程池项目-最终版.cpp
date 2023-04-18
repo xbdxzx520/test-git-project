@@ -4,6 +4,9 @@
 #include <iostream>
 #include <functional>
 #include <thread>
+
+
+
 #include <future>
 #include <chrono>
 using namespace std;
@@ -26,6 +29,7 @@ int sum1(int a, int b)
 {
     this_thread::sleep_for(chrono::seconds(2));
     // 比较耗时
+    ::printf("nihao");
     return a + b;
 }
 int sum2(int a, int b, int c)
